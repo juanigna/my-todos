@@ -32,7 +32,6 @@ export const addTodo = async (description: string) => {
         const todo = await prisma.todo.create({
             data: { description }
         })
-
         revalidatePath('/dashboard/server-todos')
 
         return todo
