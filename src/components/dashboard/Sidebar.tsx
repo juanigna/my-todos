@@ -3,8 +3,8 @@
 import Image from "next/image"
 import { CiLogout } from "react-icons/ci"
 import SidebarItem from "./SidebarItem"
-import { IoCalendarClearOutline, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
-import { CiBoxList } from "react-icons/ci";
+import { IoBasketOutline, IoCalendarClearOutline, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
+import { CiBoxList, CiVirus } from "react-icons/ci";
 import Link from "next/link"
 
 
@@ -23,7 +23,18 @@ const menuItems = [
         icon: <IoListOutline />,
         title: 'Server actions',
         path: '/dashboard/server-todos',
-    }
+    },
+    {
+        icon: <CiVirus />,
+        title: 'Cookies',
+        path: '/dashboard/cookies',
+    },
+    {
+        icon: <IoBasketOutline />,
+        title: 'Productos',
+        path: '/dashboard/products',
+    },
+
 ]
 
 const Sidebar = () => {
